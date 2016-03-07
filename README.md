@@ -31,8 +31,9 @@ Coming soon!
 
 ## Contributors
 
-Lisa Yin
-Michael Sheely
+Lisa Yin (HMC '17)
+
+Michael Sheely (HMC '17)
 
 ## License
 
