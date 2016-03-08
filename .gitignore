@@ -1,3 +1,6 @@
+#executable
+heapTest
+
 # Compiled Object files
 *.slo
 *.lo
