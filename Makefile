@@ -10,6 +10,6 @@ test: $(TARGET)
 clean:
 	rm -f $(TARGET) *.o
 
-heapTest: heapTests.cc binHeap.h binHeap-private.h
-	$(CXX) $(CFLAGS) -o $(TARGET) heapTests.cc
+heapTest: heapTest.cc binHeap.h binHeap-private.h
+	$(CXX) $(CFLAGS) -o $(TARGET) heapTest.cc
 
