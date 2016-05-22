@@ -1,8 +1,8 @@
 ## binaryHeap
 
-A simple general purpose min-queue which is implemented in C++ using a binary heap.  The queue supports insertion, min-lookup, min-deletion, and weight adjusting.  The data structure is templated such that it may hold any objects as long as they are tagged with an integral priority.
+A simple general purpose min-queue which is implemented in C++ using a binary heap.  The underlying data structure is a simple array so that node traversal may be done via simple pointer arithmetic (standard for heaps, of course).  The queue supports insertion, min-lookup, min-deletion, and weight adjusting (helpful for algorithms such as [Prim's](https://en.wikipedia.org/wiki/Prim's_algorithm) and [Dijkstra's](https://en.wikipedia.org/wiki/Dijkstra's_algorithm)).  The data structure is templated such that it may hold any objects as long as they are tagged with an integral priority.
 
-## Code Example
+## Code Examples
 
 An example use case is shown below:
 ```
