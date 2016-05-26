@@ -3,34 +3,34 @@
 #define BINHEAP_HEADER_INCLUDED
 
 #include <stddef.h>
+#include <vector>
+using std::size_t;
+using std::vector;
 
 template <class T>
 class binHeap {
   public:
-    binHeap<T>();
-    ~binHeap<T>();
-    binHeap& operator=(const binHeap& other);
-    binHeap(const binHeap& other);
- 
-    size_t size() { return size_; }
-    void insert(T obj, unsigned weight);
+    binHeap<T>() = default;
+    ~binHeap<T>() = default;
+    binHeap& operator=(const binHeap& other) = default;
+    binHeap(const binHeap& other) = default;
+
+    size_t size() { return data_.size(); }
+    void insert(T obj, unsigned weight) {
+      data_.push_back(Node
+    }
     T findMin();
     T deleteMin();
+    //void adjustWeight(Node*);
   private:
     struct Node {
-      Node(T obj, int weight) : data_(obj), weight_(weight) { };
-      T data_;
-      int weight_;
-      Node* left_;
-      Node* right_;
+      T value_;
+      unsigned weight_;
     };
-    static void recursiveDelete(Node*);
-    size_t size_;
-    Node* root_;
-    T* data;
-};
+    vector<Node> data_;
 
-#include "binHeap-private.h"
+
+};
 
 #endif
 

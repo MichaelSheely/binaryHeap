@@ -1,4 +1,4 @@
-CXX = clang++
+CXX = gcc
 TARGET = heapTest
 CFLAGS = -std=c++11 -Wall -Wextra -pedantic
 
@@ -10,6 +10,6 @@ test: $(TARGET)
 clean:
 	rm -f $(TARGET) *.o
 
-heapTest: heapTest.cc binHeap.h binHeap-private.h
+heapTest: heapTest.cc binHeap.h
 	$(CXX) $(CFLAGS) -o $(TARGET) heapTest.cc
 
